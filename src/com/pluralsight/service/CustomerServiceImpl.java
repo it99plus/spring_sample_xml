@@ -8,8 +8,7 @@ import com.pluralsight.repository.CustomerRepository;
 
 	private CustomerRepository customerRepository;
 
-	public CustomerServiceImpl() {
-	}
+	public CustomerServiceImpl() {}
 	
 	public CustomerServiceImpl(CustomerRepository customerRepository) {
 		this.customerRepository = customerRepository;
