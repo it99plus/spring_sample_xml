@@ -1,15 +1,14 @@
-package com.plurasight.repository;
+package com.pluralsight.repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.plurasight.model.Customer;
+import com.pluralsight.model.Customer;
 
 public class HibernateCustomerReopositoryImpl implements CustomerRepository {
 
-	/* (non-Javadoc)
-	 * @see com.plurasight.repository.CustomerRepository#findAll()
-	 */
+	
+	
 	public List<Customer> findAll() {
 		List<Customer> customers = new ArrayList<Customer>();
 		Customer customer = new Customer();
