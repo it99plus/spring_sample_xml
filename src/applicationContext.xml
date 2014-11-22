@@ -8,7 +8,8 @@
  <bean name="customerRepository" class="com.pluralsight.repository.HibernateCustomerReopositoryImpl" />
  
  <bean name="customerService" class="com.pluralsight.service.CustomerServiceImpl"  >
- 	<property name="customerRepository" ref="customerRepository"></property>
+ 	<constructor-arg ref="customerRepository" />
  </bean>
+ 
  
 </beans >
