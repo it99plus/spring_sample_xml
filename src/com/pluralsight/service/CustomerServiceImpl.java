@@ -4,11 +4,14 @@ import java.util.List;
 
 import com.pluralsight.model.Customer;
 import com.pluralsight.repository.CustomerRepository;
-import com.pluralsight.repository.HibernateCustomerRepositoryImpl;
 
 public class CustomerServiceImpl implements CustomerService {
 
-	private CustomerRepository customRepository = new HibernateCustomerRepositoryImpl();
+	private CustomerRepository customRepository;
+
+	public void setCustomRepository(CustomerRepository customRepository) {
+		this.customRepository = customRepository;
+	}
 
 	@Override
 	public List<Customer> findAll() {
