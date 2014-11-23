@@ -1,0 +1,32 @@
+Stereotype Annotations
+----------------------------------------------------------------
+@Component	===========> Regular componenets/beans, any POJO
+
+@Service	===========>  where business logic is contained
+@Repository	===========>  Datat Access tier /ddatabase interaction layer
+
+
+
+
+Stereotype Annotations
+----------------------------------------------------------------
+@Component	===========> Regular componenets/beans, any POJO
+
+@Service	===========>  where business logic is contained
+@Repository	===========>  Datat Access tier /ddatabase interaction layer
+
+
+@Autowired
+Memeber viriable =====> uses reflection to wire thte bean
+
+@Autowired
+constructor ===> uses the constructor
+
+@Autowired
+setter ====> uses the setter
+
+
+
+
+byType is looking at CustomerRepository
+byName is looking at setCustomerRepository
