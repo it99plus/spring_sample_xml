@@ -8,6 +8,14 @@ import com.pluralsight.repository.CustomerRepository;
 public class CustomerServiceImpl implements CustomerService {
 
 	private CustomerRepository customRepository;
+	
+	public CustomerServiceImpl() {}
+	
+	public CustomerServiceImpl(CustomerRepository customerRepository) {
+		System.out.println("We are using constrctor injection");
+		this.customRepository = customerRepository;
+	}
+	
 
 	public void setCustomRepository(CustomerRepository customRepository) {
 		this.customRepository = customRepository;
